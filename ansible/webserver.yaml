@@ -22,8 +22,8 @@
         apache2_module: 
           state: present
           name: wsgi
-          notify: restart apache2
-          
+        notify: restart apache2
+
     handlers:
       - name: restart apache2
         service: 
