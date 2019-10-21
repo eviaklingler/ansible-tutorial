@@ -1,0 +1,10 @@
+---
+  - hosts: controlhost
+    become: true
+    tasks:
+      - name: install tools
+        apt:
+          pgk:
+            - curl
+          state: present
+          update_cache: yes
