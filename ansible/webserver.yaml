@@ -40,7 +40,7 @@
 
       - name: setup python virtualenv
         pip:
-          reqirements : /var/www/demo/requirements.txt
+          requirements : /var/www/demo/requirements.txt
           virtualenv: /var/www/demo/.venv
         notify: restart apache2
 
