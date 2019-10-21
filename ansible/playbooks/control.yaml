@@ -4,7 +4,7 @@
     tasks:
       - name: install tools
         apt:
-          pgk:
+          pkg:
             - curl
           state: present
           update_cache: yes
